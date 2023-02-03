@@ -4,6 +4,7 @@
 This project is the Flutter implementation of an example app using the pokeapi.co API
 It uses the Bloc lib for state management
 
+Try it -> https://pokemon-app-d061f.web.app
 ## Getting Started
 
 Clone the repo locally and run:
