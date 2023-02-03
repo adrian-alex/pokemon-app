@@ -31,13 +31,17 @@ dependencies:
   # used as a router lib
   go_router: ^5.1.5
 
+  # https://pub.dev/packages/simple_animations
   simple_animations: ^5.0.0+3
+
+  # https://pub.dev/packages/supercharged
   supercharged: ^2.1.1
 
   # https://pub.dev/packages/google_fonts
   # used to set custom fonts
   google_fonts: ^3.0.1
 
+  # https://pub.dev/packages/flutter_svg
   flutter_svg: ^1.1.6
 
 
