@@ -1,0 +1,31 @@
+name: data_repository
+description: Dart package which manages the data domain for the app
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0-0 <3.0.0"
+
+dependencies:
+  # https://pub.dev/packages/equatable
+  # used to allow dart to easily compare objects
+  equatable: ^2.0.0
+
+  # https://pub.dev/packages/dio
+  # used to make HTTP requests
+  dio: ^4.0.6
+
+  # https://pub.dev/packages/shared_preferences
+  # used to store data locally
+  shared_preferences: ^2.0.15
+
+  # https://pub.dev/packages/json_serializable
+  # used to transform models into JSON and vice-versa
+  json_serializable: ^6.3.1
+
+  # the actual flutter framework, needed for json_serializable and shared_preferences to work
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  #  used to transform models into JSON and vice-versa
+  build_runner: ^2.1.7
