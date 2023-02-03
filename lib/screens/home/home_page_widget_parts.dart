@@ -1,5 +1,7 @@
 part of 'home_page_widget.dart';
 
+String _errorMessage = "No pokemons found, check your internet connection";
+
 /// The page body widget
 /// Will display a progress indicator while loading
 Widget get _bodyWidget => BlocBuilder<HomePageBloc, HomePageBlocState>(
@@ -38,6 +40,8 @@ Widget _statsWidgets({required BuildContext context, required List<PokemonModel>
       buildWhen: (previous, current) => current is HomePageBlocStatePokemonSelected,
       builder: (context, state) {
         if (state is HomePageBlocStatePokemonSelected) {
+          if (pokemons.isEmpty) return Text(_errorMessage);
+
           return StatWidget(pokemons[state.index]);
         }
         return const SizedBox.shrink();

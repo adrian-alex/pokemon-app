@@ -15,7 +15,7 @@ class PokemonImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: isMobile(context) ? 20 : 35),
+      padding: EdgeInsets.symmetric(horizontal: isMobile(context) ? 25 : 35),
       child: _logoWidget,
     );
   }
