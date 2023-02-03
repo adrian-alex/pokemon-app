@@ -62,7 +62,7 @@ Widget _carouselWidget({
         child: PageView(
           pageSnapping: true,
           onPageChanged: (index) => context.read<HomePageBloc>().add(HomePageBlocEventPokemonSelected(index)),
-          controller: PageController(viewportFraction: 0.5, initialPage: 0, keepPage: true),
+          controller: PageController(viewportFraction: isMobile(context) ? 0.7 : 0.5, initialPage: 0, keepPage: true),
           children: pokemons.map((e) => PokemonImage(e)).toList(),
         ),
       ),

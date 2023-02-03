@@ -29,7 +29,7 @@ class StatWidget extends StatelessWidget {
         constraints: const BoxConstraints(maxWidth: _maxWidth),
         decoration: BoxDecoration(
           color: Colors.white.withOpacity(0.9),
-          borderRadius: const BorderRadius.all(Radius.circular(20)),
+          borderRadius: const BorderRadius.all(Radius.circular(70)),
         ),
         child: Column(
           children: [
@@ -48,7 +48,7 @@ class StatWidget extends StatelessWidget {
             ),
             paragraphStrong("${pokemon.stats.firstWhere((element) => element.name == "hp").value} HP"),
             const SizedBox(
-              height: 32,
+              height: 10,
             ),
             _statsDetails(pokemon.stats.sublist(1)),
           ],
